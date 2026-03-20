@@ -1,0 +1,29 @@
+/* --- DESKTOP VIEW --- */
+/* These rules ONLY apply when the screen is 768px or wider */
+
+@media (min-width: 768px) {
+    
+    /* 1. Hide the Hamburger Button */
+    #menu {
+        display: none;
+    }
+
+    /* 2. Show the navigation menu permanently and make it a row */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Remove the separator lines we used in the mobile view */
+    .navigation a {
+        border-top: none;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    /* 3. Change the Image Grid to 3 Columns */
+    .res-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

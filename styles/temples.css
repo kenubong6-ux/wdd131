@@ -1,0 +1,151 @@
+/* --- COLOR PALETTE & FONTS --- */
+:root {
+    --primary-color: #2c3e50;
+    --nav-bg: #34495e;
+    --accent-color: #f1c40f;
+    --text-dark: #333;
+    --text-light: #fff;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: var(--text-dark);
+}
+
+/* --- HEADER & HAMBURGER BUTTON --- */
+header {
+    background-color: var(--primary-color);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: var(--text-light);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* The Hamburger Button */
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* Default icon (Hamburger) */
+#menu::before {
+    content: "≡"; 
+}
+
+/* When the JS adds the 'show' class, change icon to X */
+#menu.show::before {
+    content: "X"; 
+}
+
+/* --- NAVIGATION MENU --- */
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: var(--nav-bg);
+}
+
+/* When the JS adds the 'show' class, reveal the menu */
+.navigation.show {
+    display: flex; 
+}
+
+.navigation a {
+    display: block;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--accent-color);
+}
+
+.navigation a.active {
+    color: var(--accent-color);
+}
+
+/* --- MAIN LAYOUT & GRID --- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* CSS Grid requirement */
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Images and Figures */
+figure {
+    margin: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: #eee;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #f1c40f; 
+}
