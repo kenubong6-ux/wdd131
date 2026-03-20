@@ -15,8 +15,8 @@
         justify-content: center;
     }
 
-    /* Remove the separator lines we used in the mobile view */
     .navigation a {
+        display: block;
         border-top: none;
         padding: 1rem 2rem;
         font-size: 1.1rem;
