@@ -9,13 +9,13 @@
     }
 
     /* 2. Show the navigation menu permanently and make it a row */
-    .navigation {
+    .nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    .navigation a {
+    .nav a {
         display: block;
         border-top: none;
         padding: 1rem 2rem;

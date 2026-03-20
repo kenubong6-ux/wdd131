@@ -55,13 +55,13 @@ h1 {
 }
 
 /* --- NAVIGATION MENU --- */
-.navigation {
+.nav {
     display: flex; /* This satisfies the audit tool! */
     flex-direction: column;
     background-color: var(--nav-bg);
 }
 
-.navigation a {
+.nav a {
     display: none; /* Hides the links by default on mobile */
     color: var(--text-light);
     text-decoration: none;
@@ -73,16 +73,16 @@ h1 {
 }
 
 /* When JS adds the 'show' class to the nav, reveal the links */
-.navigation.show a {
+.nav.show a {
     display: block; 
 }
 
-.navigation a:hover {
+.nav a:hover {
     background-color: #00000033; 
     color: var(--accent-color);
 }
 
-.navigation a.active {
+.nav a.active {
     color: var(--accent-color);
 }
 
