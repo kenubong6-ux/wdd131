@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria - Country Profile | Ubong Ken</title>
+    <meta name="description" content="A demographic and weather profile of Nigeria for WDD 131 by Ubong Ken.">
+    <meta name="author" content="Ubong Ken">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/nigeria-large.webp">
+                <img src="images/nigeria-small.webp" alt="Landscape of Nigeria" width="400" height="250" loading="eager">
+            </picture>
+        </div>
+
+        <div class="content-grid">
+            <section class="card data-card">
+                <h2>Data</h2>
+                <div class="card-content">
+                    <p><strong>Area:</strong> 923,768 sq km</p>
+                    <p><strong>Population:</strong> 223,800,000</p>
+                    <p><strong>Capital:</strong> Abuja</p>
+                    <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+                    <p><strong>Currency:</strong> Naira (NGN)</p>
+                    <p><strong>Time Zone:</strong> UTC+1 (WAT)</p>
+                    <p><strong>Calling Code:</strong> +234</p>
+                    <p><strong>Internet TLD:</strong> .ng</p>
+                </div>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather</h2>
+                <div class="card-content weather-content">
+                    <img src="images/weather-icon.svg" alt="Weather Icon" width="60" height="60" class="weather-icon">
+                    <p><strong>Temperature:</strong> <span id="temp">31</span> °C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Ubong Ken 🌸 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

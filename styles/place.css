@@ -1,0 +1,85 @@
+/* --- GLOBAL VARIABLES --- */
+:root {
+    --primary-color: #008751;   /* Nigeria Green */
+    --accent-color: #005c37;    /* Darker green for header border */
+    --secondary-color: #ffffff; /* White */
+    --text-dark: #333333;
+    --bg-color: #ffffff;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    text-align: center; /* Centers all text for mobile */
+}
+
+/* --- HEADER & FOOTER --- */
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.5rem;
+}
+
+header {
+    border-bottom: 8px solid var(--accent-color); 
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+}
+
+/* --- MAIN MOBILE LAYOUT --- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero {
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- MOBILE CARDS --- */
+.content-grid {
+    padding: 2rem 1rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
