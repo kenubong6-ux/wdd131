@@ -1,0 +1,187 @@
+/* --- CSS VARIABLES --- */
+:root {
+    --primary-color: #2b0b2b;
+    --bg-color: #d1ced1;
+    --form-bg: #ffffff;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --accent-color: #d81b60;
+    --border-color: #a09da0;
+    
+    --font-main: 'Roboto', sans-serif;
+}
+
+/* --- BASE STYLES --- */
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* --- FORM STYLING --- */
+.review-form {
+    background-color: var(--bg-color);
+}
+
+fieldset {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* General Inputs */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    background-color: var(--form-bg);
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+/* Radio Buttons (Stars) */
+.rating-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.rating-group label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.rating-group input[type="radio"] {
+    margin-top: 0.5rem;
+    transform: scale(1.2);
+}
+
+/* Checkboxes */
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.75rem;
+    transform: scale(1.2);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* --- CONFIRMATION PAGE STYLING (review.html) --- */
+.confirmation-message {
+    background-color: var(--form-bg);
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.confirmation-message h2 {
+    color: var(--primary-color);
+}
+
+.confirmation-message a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.confirmation-message a:hover {
+    background-color: var(--accent-color);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (min-width: 600px) {
+    fieldset {
+        padding: 2rem;
+        background-color: #ebe9eb;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+    }
+    
+    legend {
+        background-color: var(--bg-color);
+    }
+}
